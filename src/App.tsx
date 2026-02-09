@@ -1,6 +1,4 @@
 import { useEffect, useState } from "react";
-import type { Schema } from "../amplify/data/resource";
-import { generateClient } from "aws-amplify/data";
 
 const client = generateClient<Schema>();
 
@@ -27,10 +25,10 @@ function App() {
         ))}
       </ul>
       <div>
-        🥳 App successfully hosted. Try creating a new todo.
+        🥳 Aplicación funcionando con React y sin Amplify.
         <br />
-        <a href="https://docs.amplify.aws/react/start/quickstart/#make-frontend-updates">
-          Review next step of this tutorial.
+        <a>
+          Ya no se usa Amplify ni el backend.
         </a>
       </div>
     </main>
