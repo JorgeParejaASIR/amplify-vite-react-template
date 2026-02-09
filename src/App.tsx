@@ -1,14 +1,18 @@
 import { useEffect, useState } from "react";
 
-const client = generateClient<Schema>();
+type Todo = {
+  id: string;
+  content: string | null;
+};
 
 function App() {
-  const [todos, setTodos] = useState<Array<Schema["Todo"]["type"]>>([]);
+  const [todos, setTodos] = useState<Todo[]>([]);
 
   useEffect(() => {
-    client.models.Todo.observeQuery().subscribe({
-      next: (data) => setTodos([...data.items]),
-    });
+    setTodos([
+    { id: "1", content: "React sin Amplify" },
+    { id: "2", content: "Que suplicio macho, ni haciendome del Hercules" },
+    ]);
   }, []);
 
   function createTodo() {
