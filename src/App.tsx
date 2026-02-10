@@ -29,7 +29,7 @@ function App() {
         🥳 Aplicación funcionando con React y sin Amplify.
         <br />
         <a>
-          Ya no se usa Amplify ni el backend.
+          Ya no se usa tyufguygyjygjgyj.
         </a>
       </div>
     </main>
